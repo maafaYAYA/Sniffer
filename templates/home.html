@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    
+      <table>
+        <tdead>
+          <tr>
+            <td>EtdFdest_mac</td>
+            <td>EtdFsrc_mac</td>
+            <td>src</td>
+            <td>TCPdestP</td> 
+            <td>TCPsrcP</td>
+            <td>EtdFetd_proto</td>  
+            <td>version</td>  
+            <td>header_lengtd</td>  
+            <td>ttl</td>    
+            <td>target</td>  
+            <td>type</td>  
+            <td>ICMPtype</td>  
+            <td>ICMPcode</td>  
+            <td>ICMPchecksum</td>   
+
+          </tr>
+        </tdead>
+    {% for post in posts %}
+        <tbody>
+          <tr>
+            <td >{{post.EtdFdest_mac}}</td>
+            <td >{{post.EtdFsrc_mac}}</td>
+            <td>{{post.src}}</td>
+            <td>{{post.TCPdestP}}</td>
+            <td>{{post.TCPsrcP}}</td>
+            <td >{{post.EtdFetd_proto}}</td>
+            <td>{{post.version}}</td>
+            <td>{{post.header_lengtd}}</td>
+            <td>{{post.ttl}}</td>
+            <td>{{post.target}}</td>
+            <td>{{post.type}}</td>
+            <td>{{post.ICMPtype}}</td>
+            <td>{{post.ICMPcode}}</td>
+            <td>{{post.ICMPchecksum}}</td>
+
+            
+
+            
+
+          </tr>
+          
+        </tbody>
+    {% endfor %}
+      </table>
+
+    
+{% endblock content %}
